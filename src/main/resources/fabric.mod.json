@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "linkbutton",
+  "version": "0.1.0",
+
+  "name": "Link Button",
+  "description": "A simple Fabric mod that allows you to add a customizable link button to the main menu.",
+  "authors": [
+    "Safro"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/link-button",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "All Rights Reserved unless explicitly stated",
+  "icon": "assets/linkbutton/icon.jpeg",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.linkbutton.LinkButton"
+    ]
+  },
+  "mixins": [
+    "linkbutton.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
